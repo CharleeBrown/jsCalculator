@@ -1,12 +1,10 @@
-//document.getElementById("numOne").addEventListener("click", enterButton);
 
 
-function enterButton(){
+function enterButton(button){
     
     var numWin = document.getElementById("numWindow");
-
-    numWin.value = parseInt(numWin.value) + 3;
+    numWin.value = parseInt(numWin.value) + parseInt(button.value);
     console.log(numWin.value);
 
-    // Figured out adding values and changing the text. 
+
 }
