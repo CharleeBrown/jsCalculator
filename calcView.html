@@ -1,32 +1,54 @@
 <!DOCTYPE html>
+
 <HTML>
+<HEAD>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="calcStyle.css"/>
+</HEAD>
 
     <BODY>
+        <div class="container">
 
         <DIV class="row">
             <input type="text" id="numWindow"/>
 
 
         </DIV>
-        <div class="row">
+    </div>
+    <div class="container">
+
+    
+        <div class="row" >
+            <div class="col">
+
+           
             <input type="submit"  id="numOne" value ="1" onclick="enterButton(this)"/>
             <input type="submit" id="numTwo" value = "2" onclick="enterButton(this)"/>
             <input type="submit" id="numThree" value="3" onclick = "enterButton(this)"/>
         </div>
-        <div class="row">
+        </div>
+        <div class="col">
+
+        
+        <div class="row" >
             <input type="submit"  id="numFour" value ="4" onclick="enterButton(this)"/>
             <input type="submit" id="numFive" value = "5" onclick="enterButton(this)"/>
             <input type="submit" id="numSix" value="6" onclick = "enterButton(this)"/>
         </div>
-        <div class="row">
+    </div>
+    <div class="col">
+        <div class="row" >
             <input type="submit"  id="numSeven" value ="7" onclick="enterButton(this)"/>
             <input type="submit" id="numEight" value = "8" onclick="enterButton(this)"/>
             <input type="submit" id="numNine" value="9" onclick = "enterButton(this)"/>
         </div>
+    </div>
+        
         <div class="row">
             <div class="col">
                 <input type="submit" id="numZero" value = "0" onclick ="enterButton(this)"/>
             </div>
+        </div>
         </div>
     </BODY>
     <script src = "calcScript.js"></script>
