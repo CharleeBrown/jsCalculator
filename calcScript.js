@@ -1,5 +1,9 @@
 var numWin = document.getElementById("numWindow");
 
+function clearIt(){
+    document.getElementById("numWindow").value = "";
+}
+
 function enterButton(button){
     
    
@@ -20,6 +24,11 @@ function pemdas(button){
     }
 }
 
-function clearIt(){
-    document.getElementById("numWindow").value = "";
+function getValue(){
+     var getStrings = numWin.value.toString();
+     var getarr = getStrings.split(" ");
+    console.log(parseInt(getarr[0])  + getarr[1].value + parseInt(getarr[2]));
+     numWin.value = "";
 }
+
+
