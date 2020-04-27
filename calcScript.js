@@ -1,8 +1,8 @@
-
+var numWin = document.getElementById("numWindow");
 
 function enterButton(button){
     
-    var numWin = document.getElementById("numWindow");
+   
     if(numWin.value == ""){
         numWin.value = parseInt(button.value);
     }
@@ -10,9 +10,15 @@ function enterButton(button){
         numWin.value = parseInt(numWin.value) + parseInt(button.value);
         console.log(numWin.value);
     }
-    
+}
 
-
+function pemdas(button){
+    if(numWin.value == ""){
+        numWin.value = "";
+    }
+    else{
+        numWin.value = numWin.value + " " + button.value;
+    }
 }
 
 function clearIt(){

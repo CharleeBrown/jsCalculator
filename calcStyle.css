@@ -4,7 +4,18 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 100px;
-    width:25%;
+    width:fit-content;
     height:25%;
     text-align: center;
+}
+table{
+    margin: 0 auto; 
+}
+#pemdas{
+    width:30px;
+    height:30px;
+}
+#calcWindow{
+    width: 25%;
+    background-color: lightgrey;
 }
