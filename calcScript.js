@@ -4,7 +4,7 @@ function enterButton(button){
     
     var numWin = document.getElementById("numWindow");
     if(numWin.value == ""){
-        numWin.value = numWin.value + "0";
+        numWin.value = parseInt(button.value);
     }
     else{
         numWin.value = parseInt(numWin.value) + parseInt(button.value);
@@ -13,4 +13,8 @@ function enterButton(button){
     
 
 
+}
+
+function clearIt(){
+    document.getElementById("numWindow").value = "";
 }
