@@ -7,8 +7,7 @@ function enterButton(button){
         numWin.value = parseInt(button.value);
     }
     else{
-        numWin.value = parseInt(numWin.value) + parseInt(button.value);
-        console.log(numWin.value);
+        numWin.value = numWin.value + " " + button.value;
     }
 }
 
