@@ -27,7 +27,7 @@ function pemdas(button){
 function getValue(){
      var getStrings = numWin.value.toString();
      var getarr = getStrings.split(" ");
-    console.log(parseInt(getarr[0])  + getarr[1].value + parseInt(getarr[2]));
+    console.log(Math.Add(parseInt(getarr[0])  + getarr[1] + parseInt(getarr[2]));
      numWin.value = "";
 }
 
