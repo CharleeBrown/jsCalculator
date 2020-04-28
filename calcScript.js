@@ -12,7 +12,7 @@ function enterButton(button){
     }
      
     else{
-        numWin.value = numWin.value +""+ button.value;
+        numWin.value = numWin.value +" "+ button.value;
     }
 }
 
