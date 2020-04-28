@@ -1,4 +1,6 @@
-
+body{
+  background-color: lightgrey !important ;
+   }
 
 .container{
     margin-right: auto;
@@ -7,6 +9,7 @@
     width:fit-content;
     height:25%;
     text-align: center;
+    border: black 1px solid;
 }
 table{
     margin: 0 auto; 
@@ -17,5 +20,9 @@ table{
 }
 #calcWindow{
     width: 25%;
-    background-color: lightgrey;
+    background-color: grey;
+}
+#calcHeading{
+    color:white;
+    font-family: Arial, Verdana, sans-serif;
 }
