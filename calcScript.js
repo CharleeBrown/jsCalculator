@@ -1,17 +1,36 @@
 var numWin = document.getElementById("numWindow");
+var tests = document.getElementById("testWindow");
+numWin.addEventListener("keydown", getkey);
+//body.addEventListener("keydown", getkey);
+ document.addEventListener("keydown", getkey);
 
+function getkey(event){
+    numWin.focus();
+   if(event.keyCode == 13){
+       getValue();
+   }
+   if(event.keyCode == 46){
+       clearIt();
+   }
+   console.log(event.keyCode);
+}
 function clearIt(){
     document.getElementById("numWindow").value = "";
 }
 
 function enterButton(button){
     
-   
-    if(numWin.value == ""){
+    var checks = numWin.split(" "); 
+    if(checks[0].value== null){
         numWin.value = parseInt(button.value);
+    }
+    else if(checks[1] == null){
+        numWin.value ="";
+        numWin.value =  parseInt(button.value);
     }
     else{
         numWin.value = numWin.value + " " + button.value;
+        
     }
 }
 
@@ -24,34 +43,28 @@ function pemdas(button){
     }
 }
 
+var errorShow = document.getElementById("errorShow");
 function getValue(){
-     var getStrings = numWin.value.toString();
-     var getarr = getStrings.split(" ");
-     if(getarr[1].value = "+"){
-         var results = parseInt(getarr[0]) + parseInt(getarr[2]);
-         console.log(results);
-         numWin.value = results;
+     try{
+     numWin.value = eval(numWin.value);
      }
-     else if (getarr[1].value ="-"){
-        var results = parseInt(getarr[0]) - parseInt(getarr[2]);
-        if(results < 0){
-             results = parseInt(results) * -1; 
-            console.log("-" + results);
-        numWin.value = "-" + results;
+     catch(error){
+         if(err = "SyntaxError: \"missing ) in parenthetical\""){
+            errorShow.innerHTML = "Close Parenthesis";
+            var doTime = setTimeout(clearError(), 300);
+            clearTimeout(doTime);
+             
+           // console.log(error);
+         }
      }
-    }
-     else if (getarr[1].value ="*"){
-        var results = parseInt(getarr[0]) * parseInt(getarr[2]);
-        console.log(results);
-        numWin.value = results;
-     }
-        else if (getarr[1].value ="/"){
-            var results = parseInt(getarr[0]) % parseInt(getarr[2]);
-            console.log(results);
-            numWin.value = results;
-        }
+    
+     
   //  console.log(Math.Add(parseInt(getarr[0])  + getarr[1] + parseInt(getarr[2]));
     
+}
+
+function clearError(){
+    errorShow.innerHTML = "";
 }
 
 

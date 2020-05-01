@@ -1,7 +1,9 @@
 body{
   background-color: lightgrey !important ;
    }
-
+input{
+    text-align: center;
+}
 .container{
     margin-right: auto;
     margin-left: auto;
@@ -21,8 +23,14 @@ table{
 #calcWindow{
     width: 25%;
     background-color: grey;
+    
 }
 #calcHeading{
     color:white;
     font-family: Arial, Verdana, sans-serif;
+}
+#errorShow{
+    color:white;
+    font-size: 14px;
+    margin:1px;
 }
