@@ -30,7 +30,6 @@ function enterButton(button){
     }
     else{
         numWin.value = numWin.value + " " + button.value;
-        
     }
 }
 
@@ -53,14 +52,8 @@ function getValue(){
             errorShow.innerHTML = "Close Parenthesis";
             var doTime = setTimeout(clearError(), 300);
             clearTimeout(doTime);
-             
-           // console.log(error);
          }
      }
-    
-     
-  //  console.log(Math.Add(parseInt(getarr[0])  + getarr[1] + parseInt(getarr[2]));
-    
 }
 
 function clearError(){
