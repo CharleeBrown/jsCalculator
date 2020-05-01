@@ -1,4 +1,5 @@
 var numWin = document.getElementById("numWindow");
+doc
 
 function clearIt(){
     document.getElementById("numWindow").value = "";
