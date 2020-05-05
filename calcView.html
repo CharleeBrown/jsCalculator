@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 
 <HTML>
+
 <head>
-    <link rel="stylesheet" href="calcStyle.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
- 
+    <link rel="stylesheet" href="calcStyle.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
 </head>
 
-    <body >
-        <div class="container" id="calcWindow">
-            <h3 id="calcHeading">
-                Basic JS Calculator
-                
-            </h3>
-            <p id="errorShow"></p>
-            <table>
-        <thead>
-            <tr>
-                <th colspan="4">
-                    <input type="text" id="numWindow"/>
-                </th>
-                
-            </tr>
-           
-        </thead>
-          <tr>
-           <td> <input type="submit"  id="num" value ="1"   /></td>
-           <td> <input type="submit" id="num" value = "2"   /></td>
-          <td>  <input type="submit" id="num" value="3"   /></td>
-          <td><input type="submit" id="pemdas" value="- " onclick="pemdas(this)"/></td>
-          </tr>  
-        <tr>
-            <td>    <input type="submit"  id="num" value ="4"   /></td>
-                <td><input type="submit" id="num" value = "5"   /></td>
-                <td><input type="submit" id="num" value="6"   /></td>
-                <td><input type="submit" id="pemdas" value="+" onclick="pemdas(this)"/></td>
-         </tr>
-        
-            <tr>
-                <td><input type="submit"  id="num" value ="7"   /></td>
-                <td><input type="submit" id="num" value = "8"   /></td>
-                <td><input type="submit" id="num" value="9"   /></td>
-                <td><input type="submit" id="pemdas" value="/ " onclick="pemdas(this)"/></td>
-            </tr>
-           
-        
-    <tr>
-        <td><input type="submit" id="clear" value = "c" onclick="clearIt()"/></td>
-                <td><input type="submit" id="num" value = "0" onclick ="enterButton(this)"/></td>
+<body>
+    <div class="container" id="calcWindow">
+        <h3 id="calcHeading">
+            Basic JS Calculator
 
-        <td><input type="submit" id="sums" value="=" onclick="getValue()"/></td>
-        <td> <input type="submit" id="multiply" value="*" onclick="pemdas(this)">
+        </h3>
+        <p id="errorShow"></p>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        <input type="text" id="numWindow" />
+                    </th>
+
+                </tr>
+
+            </thead>
+            <tr>
+                <td> <input type="submit" id="num" value="1" /></td>
+                <td> <input type="submit" id="num" value="2" /></td>
+                <td> <input type="submit" id="num" value="3" /></td>
+                <td><input type="submit" id="pemdas" value="- " onclick="pemdas(this)" /></td>
             </tr>
-            </table>
-        </div>
-        </div>
-    </body>
-  
-    <script
-  src="https://code.jquery.com/jquery-3.5.0.js"
-  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-  crossorigin="anonymous"></script>
-  <script src = "jQueryCalc.js"></script> 
+            <tr>
+                <td> <input type="submit" id="num" value="4" /></td>
+                <td><input type="submit" id="num" value="5" /></td>
+                <td><input type="submit" id="num" value="6" /></td>
+                <td><input type="submit" id="pemdas" value="+" onclick="pemdas(this)" /></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" id="num" value="7" /></td>
+                <td><input type="submit" id="num" value="8" /></td>
+                <td><input type="submit" id="num" value="9" /></td>
+                <td><input type="submit" id="pemdas" value="/ " onclick="pemdas(this)" /></td>
+            </tr>
+
+
+            <tr>
+                <td><input type="submit" id="clear" value="c" onclick="clearIt()" /></td>
+                <td><input type="submit" id="num" value="0" onclick="enterButton(this)" /></td>
+
+                <td><input type="submit" id="sums" value="=" onclick="getValue()" /></td>
+                <td> <input type="submit" id="multiply" value="*" onclick="pemdas(this)">
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+<script src="jQueryCalc.js"></script>
+
 </HTML>

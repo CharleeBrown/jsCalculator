@@ -1,36 +1,43 @@
-body{
-  background-color: lightgrey !important ;
-   }
-input{
+body {
+    background-color: lightgrey !important;
+}
+
+input {
     text-align: center;
 }
-.container{
+
+.container {
     margin-right: auto;
     margin-left: auto;
     margin-top: 100px;
-    width:fit-content;
-    height:25%;
+    width: fit-content;
+    height: 25%;
     text-align: center;
     border: black 1px solid;
 }
-table{
-    margin: 0 auto; 
+
+table {
+    margin: 0 auto;
 }
-#pemdas{
-    width:30px;
-    height:30px;
+
+#pemdas {
+    width: 30px;
+    height: 30px;
 }
-#calcWindow{
+
+#calcWindow {
     width: 25%;
     background-color: grey;
-    
+
 }
-#calcHeading{
-    color:white;
+
+#calcHeading {
+    color: white;
     font-family: Arial, Verdana, sans-serif;
 }
-#errorShow{
-    color:white;
+
+#errorShow {
+    color: white;
     font-size: 14px;
-    margin:1px;
+    margin: 1px;
 }
