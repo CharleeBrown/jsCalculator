@@ -1,0 +1,15 @@
+{
+  "name": "javascriptcalc",
+  "version": "1.0.0",
+  "description": "a javascript calculator",
+  "main": "calcScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https:github.com/Charleebrown/jscalc"
+  },
+  "author": "Coleman Hallom",
+  "license": "ISC"
+}
